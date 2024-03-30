@@ -72,7 +72,7 @@
   720 PRINT ;msge$ : msge$="What"
   730 PRINT ;"What will You do now"
   740 PRINT : FOR I=1 TO get%
-  750   IF loc%(I)=rm% AND flag%(I)=0 THEN PRINT ;"You can see a ";obj$(I);" here"
+  750   IF loc%(I)=rm% AND flag%(I)=0 THEN PRINT ;"You can see a ";:COLOUR Yellow%:PRINT obj$(I);:COLOUR Green%:PRINT " here"
   760 NEXT I
   770 :
   780 COLOUR Yellow%
